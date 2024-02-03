@@ -1,5 +1,4 @@
-
-function language(q)	--one time script when save is loaded
-	local v_file_path=q.live_path:gsub("language.lua","");	--path to the current file
+function language(q,v_modid) 
+    local v_file_path=(mod_info[v_modid]):gsub("language.lua",""); 
 	variable_global_set("language_file", v_file_path .."chs.ini");
 end
